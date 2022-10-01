@@ -16,16 +16,16 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance,
 	WNDCLASS	wndclass;
 	MSG			msg;
 
-	wndclass.cbClsExtra		= 0;
-	wndclass.hInstance		= hInstance;
-	wndclass.cbWndExtra		= 0;
-	wndclass.hCursor		= LoadCursor(NULL, IDC_ARROW);
-	wndclass.hIcon			= LoadIcon(NULL, IDI_APPLICATION);
-	wndclass.lpszClassName	= className;
-	wndclass.hbrBackground	= (HBRUSH)(COLOR_BACKGROUND + 3);
-	wndclass.lpszMenuName	= NULL;
-	wndclass.lpfnWndProc	= WndProc;
-	wndclass.style			= NULL;
+	wndclass.cbClsExtra = 0;
+	wndclass.hInstance = hInstance;
+	wndclass.cbWndExtra	= 0;
+	wndclass.hCursor = LoadCursor(NULL, IDC_ARROW);
+	wndclass.hIcon = LoadIcon(NULL, IDI_APPLICATION);
+	wndclass.lpszClassName = className;
+	wndclass.hbrBackground = (HBRUSH)(COLOR_BACKGROUND + 3);
+	wndclass.lpszMenuName = NULL;
+	wndclass.lpfnWndProc = WndProc;
+	wndclass.style = NULL;
 
 	if (!RegisterClass(&wndclass))
 	{
